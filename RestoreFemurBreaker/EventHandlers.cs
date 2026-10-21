@@ -70,11 +70,13 @@ public class EventHandlers
 
 	public void OnDoorInteract( InteractingDoorEventArgs ev )
 	{
-		if ( total == plugin.Config.NumGenerators && sacrificed && ( ev.Door.Name == "106_PRIMARY" || ev.Door.Name == "106_SECONDARY" ) && ev.Player.CurrentItem.Type == ItemType.KeycardO5 )
+		if ( total >= plugin.Config.NumGenerators && sacrificed && ( ev.Door.Type == DoorType.Scp106Primary || ev.Door.Type == DoorType.Scp106Secondary ) && ev.Player.CurrentItem.Type == ItemType.KeycardO5 )
 		{
 			Timing.RunCoroutine( Contain106() );
 			Room rm = Room.Get( RoomType.Hcz106 );
 			rm.ResetColor();
+			ev.Door.Lock( DoorLockType.NoPower );
+			total = 0;
 		}
 	}
 }

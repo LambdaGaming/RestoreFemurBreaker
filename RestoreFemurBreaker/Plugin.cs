@@ -18,6 +18,7 @@ public class Plugin : Plugin<Config>
 		base.OnEnabled();
 		EventHandlers = new EventHandlers( this );
 		events.Server.RoundStarted += EventHandlers.OnRoundStart;
+		events.Player.InteractingDoor += EventHandlers.OnDoorInteract;
 		labEvents.PlayerEvents.Death += EventHandlers.OnPlayerDeath;
 		labEvents.ObjectiveEvents.ActivatedGeneratorCompleted += EventHandlers.OnGeneratorFinish;
 		AudioClipStorage.LoadClip( Config.SoundPath, "femur_breaker" );
@@ -28,6 +29,7 @@ public class Plugin : Plugin<Config>
 		base.OnDisabled();
 		EventHandlers = null;
 		events.Server.RoundStarted -= EventHandlers.OnRoundStart;
+		events.Player.InteractingDoor -= EventHandlers.OnDoorInteract;
 		labEvents.PlayerEvents.Death -= EventHandlers.OnPlayerDeath;
 		labEvents.ObjectiveEvents.ActivatedGeneratorCompleted -= EventHandlers.OnGeneratorFinish;
 	}

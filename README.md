@@ -10,8 +10,8 @@
 
 # Installing & Configuring
  1. Install [AudioPlayerApi](https://github.com/Killers0992/AudioPlayerApi) and its dependencies to your EXILED dependencies folder.
- 2. Put RestoreFemurBreaker.dll in your EXILED plugins folder.
- 3. Put the .ogg file in a folder of your choice.
+ 2. Download [RestoreFemurBreaker.dll](https://github.com/LambdaGaming/RestoreFemurBreaker/releases/latest) and put it in your EXILED plugins folder.
+ 3. Download [femur_breaker.ogg](https://github.com/LambdaGaming/RestoreFemurBreaker/raw/refs/heads/master/femur_breaker.ogg) and put it in a folder of your choice.
  4. Run the server to generate the plugin config.
  5. Open the plugin config file and add the path for the .ogg file.
 

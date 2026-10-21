@@ -1,15 +1,16 @@
 # Restore Femur Breaker
- EXILED plugin for SCP:SL that brings back the femur breaker as an option to recontain SCP-106.
+ EXILED plugin for SCP:SL that brings the femur breaker back as an option to recontain SCP-106.
 
 # How It Works
  This version of the femur breaker works differently from the original to fit within the current game balance, and the current layout of SCP-106's room. Two conditions need to be met for the femur breaker to be activated:
  - A player must sacrifice themselves by jumping into the pit below SCP-106's chamber.
  - At least 2 generators need to be fully activated. This number can be configured.
+
  When one condition is met, the lights in 106's room will turn red. Once both conditions are met, the lights will turn green. The femur breaker can then be activated by opening one of the doors on either side of 106's chamber with an O5 keycard. The sound will play for SCP-106, any players in heavy containment, and all spectators.
 
 # Installing & Configuring
  1. Install [AudioPlayerApi](https://github.com/Killers0992/AudioPlayerApi) and its dependencies to your EXILED dependencies folder.
- 2. Put this plugin in your EXILED plugins folder.
+ 2. Put RestoreFemurBreaker.dll in your EXILED plugins folder.
  3. Put the .ogg file in a folder of your choice.
  4. Run the server to generate the plugin config.
  5. Open the plugin config file and add the path for the .ogg file.

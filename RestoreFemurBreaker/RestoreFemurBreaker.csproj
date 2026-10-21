@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugType>none</DebugType>
+  </PropertyGroup> 
+
+  <ItemGroup>
+    <PackageReference Include="AudioPlayerApi" Version="1.1.3" />
+    <PackageReference Include="ExMod.Exiled" Version="9.15.2" />
+    <Reference Include="Assembly-CSharp-firstpass" HintPath="/mnt/Disk3/SteamLibrary/steamapps/common/SCP Secret Laboratory Dedicated Server/SCPSL_Data/Managed/Assembly-CSharp-firstpass.dll" />
+    <Reference Include="Mirror" HintPath="/mnt/Disk3/SteamLibrary/steamapps/common/SCP Secret Laboratory Dedicated Server/SCPSL_Data/Managed/Mirror.dll" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="/mnt/Disk3/SteamLibrary/steamapps/common/SCP Secret Laboratory Dedicated Server/SCPSL_Data/Managed/UnityEngine.CoreModule.dll" />
+  </ItemGroup>
+
+</Project>

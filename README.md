@@ -6,7 +6,7 @@
  - A player must sacrifice themselves by jumping into the pit below SCP-106's chamber.
  - At least 2 generators need to be fully activated. This number can be configured.
 
- When one condition is met, the lights in 106's room will turn red. Once both conditions are met, the lights will turn green. The femur breaker can then be activated by opening one of the doors on either side of 106's chamber with an O5 keycard. The sound will play for SCP-106, any players in heavy containment, and all spectators.
+ When one condition is met, the lights in 106's room will turn red. Once both conditions are met, the lights will turn green. The femur breaker can then be activated by opening one of the doors on either side of 106's chamber with an O5 keycard. The sound will play for SCP-106, any players in heavy containment, and all spectators. SCP-106 will be automatically contained 20 seconds after activation.
 
 # Installing & Configuring
  1. Install [AudioPlayerApi](https://github.com/Killers0992/AudioPlayerApi) and its dependencies to your EXILED dependencies folder.
